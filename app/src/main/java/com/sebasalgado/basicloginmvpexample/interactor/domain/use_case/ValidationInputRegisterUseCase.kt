@@ -22,7 +22,7 @@ class ValidationInputRegisterUseCase {
         if (password.count() < MIN_PASS_LENGTH) {
             return RegisterInputValidType.PasswordTooShort
         }
-        if (!password.constainSpecialChar()) {
+        if (!password.containSpecialChar()) {
             return RegisterInputValidType.PasswordSpecialCharMissing
         }
         if (!password.containsUpperCase()) {
