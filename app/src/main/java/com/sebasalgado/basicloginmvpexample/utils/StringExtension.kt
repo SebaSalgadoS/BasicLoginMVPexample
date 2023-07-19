@@ -10,7 +10,7 @@ fun String.containsUpperCase(): Boolean {
     return regex.matches(this)
 }
 
-fun String.containSpecialChar(): Boolean {
+fun String.constainSpecialChar(): Boolean {
     val regex = Regex(".*[^A-Za-z\\d]+.*")
     return regex.matches(this)
 }
